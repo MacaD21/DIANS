@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body{
+            background-color: deeppink;
+        }
+        header {
+            padding: 60px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+
+        button{
+            font-weight: bold;
+            font-size:20px;
+            border:2px solid white;
+            display: inline-block;
+            padding: .75rem 1.25rem;
+            border-radius: 10rem;
+            color:black;
+            text-transform: uppercase;
+        }
+        body > form > header > div.div-left > img{
+            width:250px;
+        }
+        img#logo{
+            width:300px;
+        }
+
+    </style>
+</head>
+<body>
+<form th:method="GET" th:action="@{/home/select}">
+<header>
+    <div id="logos">
+        <img id="logo"
+             src="https://www.stb.com.mk/media/1341/logo-og_1200x1200.jpg">
+    </div>
+    </br>
+    </br>
+    <div id="button">
+        <button name="izbor" value="bankomatifilijali">Мапа на банкомати и филијали</button>
+        </br>
+        </br>
+        <button name="izbor" value="detali">Детали за филијали</button>
+        </br>
+        </br>
+        <button name="izbor" value="kontakt">Контакт</button>
+
+    </div>
+</header>
+
+
+<!--    <input type="radio" name="izbor" value="bankomat"> Bankomati-->
+<!--    <input type="radio" name="izbor" value="filijala"> Filijali-->
+
+<!--    <button type="submit">OK</button>-->
+</form>
+</body>
+</html>
