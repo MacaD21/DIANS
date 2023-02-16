@@ -1,1 +1,0 @@
-https://filijaliibankomati.azurewebsites.net/
